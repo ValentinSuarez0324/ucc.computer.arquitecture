@@ -11,7 +11,9 @@ public class App {
         String resultado = "";
         String operar = "si";
         String binario = "";
-        System.out.println("Ingrese el número que desea convertir");
+        System.out.println("-------------------------------------");
+        System.out.println("Ingrese el número que desea convertir📥");
+        System.out.println("-------------------------------------");
         System.out.print(">");
         dividendo = Capturar.nextInt(); 
         
@@ -41,7 +43,7 @@ public class App {
                     char dato = resultado.charAt(i);
                     binario = binario + dato;
                 }
-                System.out.println("El resultado es " + binario);
+                System.out.println("✅El resultado es " + binario);
     }       
 
 
