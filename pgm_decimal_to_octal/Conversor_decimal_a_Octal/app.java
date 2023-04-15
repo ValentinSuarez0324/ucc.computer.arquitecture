@@ -7,7 +7,6 @@ public class app{
         int num2;
         int resultado;
         System.out.println("Bienvenido al programa de sumas");
-        System.out.println("############## MENU ###############");
         System.out.println("Ingresa un número");
 
         num1 = Capturar.nextInt();
