@@ -6,23 +6,23 @@ public class app{
         int num1;
         int num2;
         int resultado;
-        System.out.println("Bienvenido al programa de sumas");
-        System.out.println("############## MENU ###############");
-        System.out.println("Ingresa un número");
+        System.out.println("Bienvenido al conversor de Numeros");
+        System.out.println("1. Decimal a Octal");
+        System.out.println("2. Octal a decimal");
+        int opc = Capturar.nextInt();
 
-        num1 = Capturar.nextInt();
-        System.out.println("Ingresa un segundo número");
-        num2 = Capturar.nextInt();
-        //resultado = num1 + num2;
+        if (opc == 1){
+            System.out.println("Ingresa un número decimal");
+            num1 = Capturar.nextInt();
+            String octal=operaciones.decimalAOctal(num1);
+            System.out.println("El resultado es " + octal);
 
-        System.out.println("El resultado es " + operaciones.Suma(num1, num2) );
-
-
-
- }
-public static int Suma (int dato1, int dato2) {
-    int resultado = dato1+dato2; 
-    return resultado;
-}
-
-}           
+        } else if (opc == 2){
+            System.out.println("Ingresa un número octal");
+            String dato1 =Capturar.next();
+            long dato2 =operaciones.octalADecimal(dato1);
+            System.out.println("El resultado es "+ dato2);
+        }
+       
+    }
+}                     
